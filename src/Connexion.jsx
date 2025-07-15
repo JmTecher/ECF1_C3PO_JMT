@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { users } from "./data"; // adapte le chemin selon ton projet
+import { users } from "./data"; 
 
 export default function Connexion({ onLogin }) {
   // États du formulaire
@@ -12,7 +12,7 @@ export default function Connexion({ onLogin }) {
   // Gestion de la soumission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Vérifie dans le "faux backend" (data.js)
+    // Vérifie dans le "faux backend" autrement dis (data.js)
     const found = users.find(
       u => u.username === username && u.password === password && u.role === role
     );
@@ -137,7 +137,7 @@ export default function Connexion({ onLogin }) {
 
       {/* Footer */}
       <footer className="w-full text-center py-4 text-gray-400 text-xs bg-dark/80">
-        <span className="text-white">© 2025 C3PO – Application ECF</span>
+        <span className="text-white">© 2025 C3PO – Application ECF / Projet DWWM by TECHER Jean-marie</span>
       </footer>
     </div>
   );
