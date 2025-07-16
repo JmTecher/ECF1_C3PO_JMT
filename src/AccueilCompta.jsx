@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { menus } from "./menus";
 
-// Exemple de réservations 
+// Booking example
 const reservations = [
   { menuId: 1, choix: "choix1" },
   { menuId: 1, choix: "choix2" },
@@ -36,7 +36,7 @@ export default function AccueilCompta({ user, onLogout }) {
           </h3>
         </div>
 
-        {/* Tableau responsive */}
+        {/* Responsive table*/}
         <div className="w-full max-w-3xl overflow-x-auto rounded-xl shadow">
           <table className="w-full min-w-[420px] bg-white/90 border">
             <thead>

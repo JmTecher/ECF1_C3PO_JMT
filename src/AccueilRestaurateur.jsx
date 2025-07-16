@@ -9,7 +9,7 @@ export default function AccueilRestaurateur({ user, onLogout }) {
   const [form, setForm] = useState({ date: "", choix1: "", choix2: "", description: "" });
   const [editingId, setEditingId] = useState(null);
 
-  // Ajouter ou modifier un menu
+  // Add or edit a menu
   function handleSubmit(e) {
     e.preventDefault();
     if (!form.date || !form.choix1 || !form.choix2) return;
@@ -39,7 +39,7 @@ export default function AccueilRestaurateur({ user, onLogout }) {
       <Header user={user} onLogout={onLogout} />
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-10">
 
-        {/* Bloc d'entête lisible */}
+        {/* Header section*/}
         <div className="mx-auto w-fit mb-8 px-8 py-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg flex flex-col items-center border border-gray">
           <h1 className="text-2xl font-bold text-primary drop-shadow">
             Bienvenue, {user.username} <span className="text-base font-normal">(Restaurateur)</span>
@@ -49,7 +49,7 @@ export default function AccueilRestaurateur({ user, onLogout }) {
           </p>
         </div>
 
-        {/* Formulaire d’ajout/modif */}
+        {/* Add/Edit Form*/}
         <form
           onSubmit={handleSubmit}
           className="bg-white/90 backdrop-blur p-4 rounded-lg shadow border mb-8 space-y-2 w-full max-w-md"
@@ -98,7 +98,7 @@ export default function AccueilRestaurateur({ user, onLogout }) {
           )}
         </form>
 
-        {/* Liste des menus */}
+        {/* Menu list */}
         <div className="w-full max-w-xl space-y-4">
           {menus.length === 0 && (
             <div className="text-center text-gray-500">Aucun menu pour le moment.</div>
