@@ -2,22 +2,35 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <!-- Favicon for browser tab -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Sets the browser toolbar color on mobile -->
     <meta name="theme-color" content="#2e2e4d" />
-    <!-- POLICE Montserrat -->
+    <!-- Google Fonts: Montserrat family -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>C3PO - Gestion des menus</title>
+
+    <!-- SEO: main title and description -->
+    <title>Menus de la semaine – C3PO</title>
     <meta
       name="description"
-      content="Application de gestion et réservation de menus pour la cantine d'entreprise C3PO."
+      content="Application de gestion et réservation de menus pour la cantine d'entreprise C3PO. Consultez, réservez, gérez et suivez les menus en toute simplicité, en mode sécurisé."
     />
+    <!-- SEO: Author and robots (for indexing) -->
+    <meta name="author" content="C3PO - Projet ECF1" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Accessibility: ARIA landmark regions will be handled by React app (main/header/footer) -->
   </head>
   <body class="font-sans bg-light text-dark">
-    <noscript>Activez JavaScript pour utiliser cette application.</noscript>
+    <!-- Fallback message if JavaScript is disabled -->
+    <noscript>
+      <strong>Enable JavaScript to use this application.</strong>
+    </noscript>
+    <!-- React root element -->
     <div id="root"></div>
   </body>
 </html>
